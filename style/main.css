@@ -81,7 +81,7 @@ nav a:hover {
     color: black;
 }
 
-.s1-info input {
+input {
     width: 144px;
     height: 39px;
     margin-top: 30px;
@@ -90,7 +90,7 @@ nav a:hover {
     color: black;
 }
 
-.s1-info input:hover {
+input:hover {
     width: 144px;
     height: 39px;
     margin-top: 30px;
@@ -188,7 +188,7 @@ nav a:hover {
 }
 
 .s3-info-left {
-    width: 400px;
+    width: 450px;
     margin-top: 80px;
 }
 
@@ -234,8 +234,7 @@ nav a:hover {
 .s3-info-right {
     position: relative;
     margin-top: 70px;
-    margin-left: 70px;
-    width: 600px;
+    width: 550px;
 }
 
 .s3-info-right img {
@@ -267,4 +266,234 @@ nav a:hover {
 
     border: 0.5px solid #000000;
     transform: rotate(-11.12deg);
+}
+
+/*section4*/
+
+.section-4 {
+    width: 100%;
+    height: 900px;
+    background: #292929;
+    color: white;
+}
+
+.s4-info {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+.s4-info-left {
+    width: 450px;
+    margin-top: 170px;
+}
+
+.s4-info-left h3 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.s4-info-left p {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.s4-info-right-up {
+    position: relative;
+    margin-top: 93px;
+    margin-left: 20px;
+    width: 250px;
+    z-index: 2;
+}
+
+.s4-info-right-down {
+    position: relative;
+    margin-top: 131px;
+    margin-left: 20px;
+    width: 250px;
+    z-index: 1;
+}
+
+#img-sect41 {
+    width: 200px;
+}
+
+#img-sect42 {
+    width: 310px;
+}
+
+#img-sect43 {
+    width: 200px;
+    margin-top: 36px;
+}
+
+#img-sect44 {
+    width: 240px;
+    margin-top: 29px;
+}
+
+.s4-img-decoration1 {
+    position: absolute;
+    width: 200px;
+    height: 293px;
+    left: 710px;
+    top: 2783px;
+    z-index: 0;
+
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.s4-img-decoration2 {
+    position: absolute;
+    width: 228.9px;
+    height: 300px;
+    left: 1015px;
+    top: 3120px;
+    z-index: 0;
+
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.s4-img-decoration3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 870px;
+    top: 3057px;
+    z-index: 1;
+
+    background: #EFC6A0;
+}
+
+.s4-line {
+    position: absolute;
+    width: 369.68px;
+    height: 0;
+    left: 260px;
+    top: 3471px;
+    background: #ffffff;
+
+    border: 0.5px solid #FFFFFF;
+    transform: rotate(-8.12deg);
+
+}
+
+/*section5*/
+
+.section-5 {
+    width: 100%;
+    height: 900px;
+    background: #ffffff;
+    color: black;
+}
+
+.section-5 h3 {
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    margin: 100px;
+}
+
+.s5-info {
+    width: 1000px;
+    margin: auto;
+}
+
+.s5-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s5-info .card {
+    width: 260px;
+    height: 380px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow:  36px 36px 72px #bfbfbf,
+    -36px -36px 72px #ffffff;
+}
+
+.s5-cards .card h3 {
+    margin-top: 70px;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.s5-cards .card p {
+    font-size: 24px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.s5-line1 {
+    position: absolute;
+    width: 200px;
+    height: 0;
+    left: 263px;
+    top: 3750px;
+    background: black;
+
+    border: 0.5px solid #000000;
+    transform: rotate(14.88deg);
+}
+
+.s5-line2 {
+    position: absolute;
+    width: 280px;
+    height: 0;
+    left: 1000px;
+    top: 4450px;
+    background: black;
+
+    border: 0.5px solid #000000;
+    transform: rotate(-21.02deg);
+}
+
+.s5-decoration1 {
+    position: absolute;
+    width: 93px;
+    height: 100px;
+    left: 1057px;
+    top: 3700px;
+
+    background: #EFC6A0;
+    transform: rotate(-10.13deg);
+}
+
+.s5-decoration12 {
+    position: absolute;
+    width: 92px;
+    height: 100px;
+    left: 1076px;
+    top: 3700px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    transform: rotate(37.06deg);
+}
+
+.s5-decoration2 {
+    position: absolute;
+    width: 132.8px;
+    height: 48.82px;
+    left: 311.43px;
+    top: 4430px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    transform: rotate(37.06deg);
+}
+
+.s5-decoration22 {
+    position: absolute;
+    width: 67.41px;
+    height: 85.09px;
+    left: 310.22px;
+    top: 4430px;
+
+    background: #EFC6A0;
+    transform: rotate(11.67deg);
 }
