@@ -1,0 +1,41 @@
+﻿@model MUG.Models.CoffeeDetailsViewModel
+
+    <div style="width: 1000px; margin: auto;"> 
+        <div class="product-quickview">
+            <div class="modal-content row">
+                <div class="col-12 col-md-6">
+                    <div class="product-detail__slide-one">
+                        <div class="slider-wrapper">
+                            <img src="data:image/jpg;base64,@(Convert.ToBase64String(Model.ProductItem.productImage))">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="product-detail__content">
+                        <div class="product-detail__content__header">
+                            <h2>@Model.ProductItem.productName</h2>
+                        </div>
+            
+                        <h3>Price:  @Model.ProductItem.cost  BYN</h3>
+                        <div class="divider"></div>
+                        <div class="product-detail__content__footer">
+                            <ul>
+                                <li>Grade: @Model.ProductItem.grade
+                                </li>
+                                <li>Volume: @Model.ProductItem.volume
+                                </li>
+                                <li>Composition: @Model.ProductItem.composition
+                                </li>
+                                <li>Availability: In Stock</li>
+                            </ul>
+                            <div class="product-detail__controller">
+                                <div class="add-to-cart -dark"><a class="btn -round -red" href="#"><i class="fas fa-shopping-bag"></i></a>
+                                    <h5>Order</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

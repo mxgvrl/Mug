@@ -2,25 +2,660 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\mxgvr\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\mxgvr\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_MUG.500109993.00" t="ExcludeRecursive" />
-    <e p="D:\Рабочий стол\Study\DBs\CourseWork\MUG" t="IncludeFlat">
+    <e p="C:\Users\mxgvr\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_MUG.777425459.00" t="ExcludeRecursive" />
+    <e p="D:\Рабочий стол\MUG" t="IncludeFlat">
       <e p="MUG" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="AboutController.cs" t="Include" />
+          <e p="AccountController.cs" t="Include" />
+          <e p="CoffeeController.cs" t="Include" />
+          <e p="DetailsController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Additions.cs" t="Include" />
+          <e p="CoffeeDetailsViewModel.cs" t="Include" />
+          <e p="LoginModel.cs" t="Include" />
+          <e p="MUGContext.cs" t="Include" />
+          <e p="OrderComposition.cs" t="Include" />
+          <e p="ProductList.cs" t="Include" />
+          <e p="Products.cs" t="Include" />
+          <e p="RegisterModel.cs" t="Include" />
+          <e p="UserOrder.cs" t="Include" />
+          <e p="Users.cs" t="Include" />
+        </e>
         <e p="MUG.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="MUG.AssemblyInfo.cs" t="Include" />
+              <e p="MUG.RazorAssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="Pages" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewImports.cshtml.cs" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="About" t="Include">
+            <e p="About.cshtml" t="Include" />
+            <e p="About.cshtml.cs" t="Include" />
+          </e>
+          <e p="Account" t="Include">
+            <e p="Login.cshtml" t="Include" />
+            <e p="Register.cshtml" t="Include" />
+          </e>
+          <e p="Coffee" t="Include">
+            <e p="Coffee.cshtml" t="Include" />
+          </e>
+          <e p="Details" t="Include">
+            <e p="Details.cshtml" t="Include" />
+          </e>
+          <e p="Home" t="Include">
+            <e p="Home.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="assets" t="Include">
+            <e p="css" t="Include">
+              <e p="bootstrap-drawer.min.css" t="Include" />
+              <e p="bootstrap.css" t="Include" />
+              <e p="drawer.min.css" t="Include" />
+              <e p="fontawesome.css" t="Include" />
+              <e p="jquery.modal.min.css" t="Include" />
+              <e p="slick.min.css" t="Include" />
+              <e p="star-rating.min.css" t="Include" />
+              <e p="style.css" t="Include" />
+            </e>
+            <e p="fonts" t="Include">
+              <e p="BragaRegular.eot" t="Include" />
+              <e p="BragaRegular.otf" t="Include" />
+              <e p="BragaRegular.svg" t="Include" />
+              <e p="BragaRegular.ttf" t="Include" />
+              <e p="BragaRegular.woff" t="Include" />
+              <e p="BragaRegular.woff2" t="Include" />
+              <e p="fa-brands-400.eot" t="Include" />
+              <e p="fa-brands-400.svg" t="Include" />
+              <e p="fa-brands-400.ttf" t="Include" />
+              <e p="fa-brands-400.woff" t="Include" />
+              <e p="fa-brands-400.woff2" t="Include" />
+              <e p="fa-duotone-900.eot" t="Include" />
+              <e p="fa-duotone-900.svg" t="Include" />
+              <e p="fa-duotone-900.ttf" t="Include" />
+              <e p="fa-duotone-900.woff" t="Include" />
+              <e p="fa-duotone-900.woff2" t="Include" />
+              <e p="fa-light-300.eot" t="Include" />
+              <e p="fa-light-300.svg" t="Include" />
+              <e p="fa-light-300.ttf" t="Include" />
+              <e p="fa-light-300.woff" t="Include" />
+              <e p="fa-light-300.woff2" t="Include" />
+              <e p="fa-regular-400.eot" t="Include" />
+              <e p="fa-regular-400.svg" t="Include" />
+              <e p="fa-regular-400.ttf" t="Include" />
+              <e p="fa-regular-400.woff" t="Include" />
+              <e p="fa-regular-400.woff2" t="Include" />
+              <e p="fa-solid-900.eot" t="Include" />
+              <e p="fa-solid-900.svg" t="Include" />
+              <e p="fa-solid-900.ttf" t="Include" />
+              <e p="fa-solid-900.woff" t="Include" />
+              <e p="fa-solid-900.woff2" t="Include" />
+            </e>
+            <e p="images" t="Include">
+              <e p="404" t="Include">
+                <e p="bg.png" t="Include" />
+              </e>
+              <e p="benefits" t="Include">
+                <e p="1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+              </e>
+              <e p="blog" t="Include">
+                <e p="1.png" t="Include" />
+                <e p="1_1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="2_1.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="3_1.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="4_1.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="5_1.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="6_1.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="7_1.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="8_1.png" t="Include" />
+                <e p="bg.png" t="Include" />
+                <e p="post_img.png" t="Include" />
+              </e>
+              <e p="brands" t="Include">
+                <e p="BrandsOne" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                  <e p="5.png" t="Include" />
+                  <e p="6.png" t="Include" />
+                  <e p="pattern.png" t="Include" />
+                </e>
+              </e>
+              <e p="category" t="Include">
+                <e p="CategoryOne" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                </e>
+                <e p="CategoryTwo" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                  <e p="5.png" t="Include" />
+                  <e p="6.png" t="Include" />
+                  <e p="7.png" t="Include" />
+                </e>
+              </e>
+              <e p="common" t="Include">
+                <e p="Breadcrumb" t="Include">
+                  <e p="bg.png" t="Include" />
+                </e>
+                <e p="Select" t="Include">
+                  <e p="ic-down-white.png" t="Include" />
+                  <e p="ic-down.png" t="Include" />
+                </e>
+                <e p="up-arrow.svg" t="Include" />
+              </e>
+              <e p="contact" t="Include">
+                <e p="1.png" t="Include" />
+                <e p="1_1.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="2_1.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="3_1.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="4_1.png" t="Include" />
+              </e>
+              <e p="cta" t="Include">
+                <e p="CTAOne" t="Include">
+                  <e p="1.png" t="Include" />
+                </e>
+                <e p="CTATwo" t="Include">
+                  <e p="1.png" t="Include" />
+                </e>
+              </e>
+              <e p="deal_of_week" t="Include">
+                <e p="DOWOne" t="Include">
+                  <e p="1-3.png" t="Include" />
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="decoration.png" t="Include" />
+                </e>
+                <e p="DOWThree" t="Include">
+                  <e p="bg.png" t="Include" />
+                </e>
+                <e p="DOWTwo" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="bg.png" t="Include" />
+                </e>
+              </e>
+              <e p="fav.png" t="Include" />
+              <e p="footer" t="Include">
+                <e p="footer-2-bg.png" t="Include" />
+                <e p="payment.png" t="Include" />
+              </e>
+              <e p="header" t="Include">
+                <e p="cart-icon-white.png" t="Include" />
+                <e p="cart-icon.png" t="Include" />
+                <e p="dropdown-menu-banner.png" t="Include" />
+                <e p="search-icon-white.png" t="Include" />
+                <e p="search-icon.png" t="Include" />
+                <e p="wishlist-icon-white.png" t="Include" />
+                <e p="wishlist-icon.png" t="Include" />
+              </e>
+              <e p="instagram" t="Include">
+                <e p="InstagramOne" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="10.png" t="Include" />
+                  <e p="11.png" t="Include" />
+                  <e p="12.png" t="Include" />
+                  <e p="13.png" t="Include" />
+                  <e p="14.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                  <e p="5.png" t="Include" />
+                  <e p="6.png" t="Include" />
+                  <e p="7.png" t="Include" />
+                  <e p="8.png" t="Include" />
+                  <e p="9.png" t="Include" />
+                </e>
+                <e p="InstagramTwo" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                  <e p="5.png" t="Include" />
+                  <e p="6.png" t="Include" />
+                </e>
+              </e>
+              <e p="introduction" t="Include">
+                <e p="Introduction Six" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                  <e p="5.png" t="Include" />
+                  <e p="6.png" t="Include" />
+                </e>
+                <e p="IntroductionEight" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="ic_1.png" t="Include" />
+                  <e p="ic_2.png" t="Include" />
+                  <e p="ic_3.png" t="Include" />
+                  <e p="ic_4.png" t="Include" />
+                </e>
+                <e p="IntroductionFive" t="Include">
+                  <e p="1.png" t="Include" />
+                </e>
+                <e p="IntroductionFour" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                </e>
+                <e p="IntroductionNine" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                  <e p="5.png" t="Include" />
+                  <e p="6.png" t="Include" />
+                  <e p="7.png" t="Include" />
+                  <e p="bg.png" t="Include" />
+                </e>
+                <e p="IntroductionOne" t="Include">
+                  <e p="bg1.png" t="Include" />
+                  <e p="bg2.png" t="Include" />
+                  <e p="content-deco.png" t="Include" />
+                  <e p="img1.png" t="Include" />
+                  <e p="img2.png" t="Include" />
+                </e>
+                <e p="IntroductionSeven" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                </e>
+                <e p="IntroductionTen" t="Include">
+                  <e p="big-1.png" t="Include" />
+                  <e p="big-2.png" t="Include" />
+                  <e p="small-1.png" t="Include" />
+                  <e p="small-2.png" t="Include" />
+                </e>
+                <e p="IntroductionThree" t="Include">
+                  <e p="bg.png" t="Include" />
+                  <e p="decoration.png" t="Include" />
+                  <e p="img-1.png" t="Include" />
+                  <e p="img-2.png" t="Include" />
+                </e>
+                <e p="IntroductionTwo" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                </e>
+              </e>
+              <e p="loading.gif" t="Include" />
+              <e p="logo-white.png" t="Include" />
+              <e p="logo.png" t="Include" />
+              <e p="product" t="Include">
+                <e p="1.png" t="Include" />
+                <e p="10.png" t="Include" />
+                <e p="11.png" t="Include" />
+                <e p="12.png" t="Include" />
+                <e p="13.png" t="Include" />
+                <e p="14.png" t="Include" />
+                <e p="15.png" t="Include" />
+                <e p="16.png" t="Include" />
+                <e p="17.png" t="Include" />
+                <e p="18.png" t="Include" />
+                <e p="19.png" t="Include" />
+                <e p="2.png" t="Include" />
+                <e p="20.png" t="Include" />
+                <e p="21.png" t="Include" />
+                <e p="22.png" t="Include" />
+                <e p="23.png" t="Include" />
+                <e p="24.png" t="Include" />
+                <e p="3.png" t="Include" />
+                <e p="4.png" t="Include" />
+                <e p="5.png" t="Include" />
+                <e p="6.png" t="Include" />
+                <e p="7.png" t="Include" />
+                <e p="8.png" t="Include" />
+                <e p="9.png" t="Include" />
+              </e>
+              <e p="shop" t="Include">
+                <e p="advertisment.png" t="Include" />
+              </e>
+              <e p="slider" t="Include">
+                <e p="SliderFive" t="Include">
+                  <e p="1.png" t="Include" />
+                </e>
+                <e p="SliderFour" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                </e>
+                <e p="SliderOne" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                </e>
+                <e p="SliderSix" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                </e>
+                <e p="SliderThree" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                </e>
+                <e p="SliderTwo" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                </e>
+              </e>
+              <e p="team" t="Include">
+                <e p="teamOne" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                </e>
+              </e>
+              <e p="testimonial" t="Include">
+                <e p="TestimonialOne" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                  <e p="5.png" t="Include" />
+                  <e p="6.png" t="Include" />
+                  <e p="7.png" t="Include" />
+                  <e p="8.png" t="Include" />
+                </e>
+                <e p="TestimonialThree" t="Include">
+                  <e p="bg.png" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="js" t="Include">
+              <e p="bootstrap-drawer.min.js" t="Include" />
+              <e p="drawer.min.js" t="Include" />
+              <e p="jquery-3.5.1.min.js" t="Include" />
+              <e p="jquery.countdown.min.js" t="Include" />
+              <e p="jquery.modal.min.js" t="Include" />
+              <e p="jquery.validate.min.js" t="Include" />
+              <e p="main.js" t="Include" />
+              <e p="main.min.js" t="Include" />
+              <e p="parallax.js" t="Include" />
+              <e p="parallax.min.js" t="Include" />
+              <e p="slick.min.js" t="Include" />
+            </e>
+            <e p="pug" t="Include">
+              <e p="about.pug" t="Include" />
+              <e p="base" t="Include">
+                <e p="layout.pug" t="Include" />
+                <e p="link.pug" t="Include" />
+                <e p="script.pug" t="Include" />
+                <e p="variable.pug" t="Include" />
+              </e>
+              <e p="blog.pug" t="Include" />
+              <e p="cart.pug" t="Include" />
+              <e p="checkout.pug" t="Include" />
+              <e p="components" t="Include">
+                <e p="blog" t="Include">
+                  <e p="blog-sidebar.pug" t="Include" />
+                </e>
+                <e p="drawer" t="Include">
+                  <e p="cart-drawer.pug" t="Include" />
+                  <e p="mobile-menu-drawer.pug" t="Include" />
+                </e>
+                <e p="footer" t="Include">
+                  <e p="footer-one.pug" t="Include" />
+                  <e p="footer-two.pug" t="Include" />
+                </e>
+                <e p="header" t="Include">
+                  <e p="header-one.pug" t="Include" />
+                  <e p="header-three.pug" t="Include" />
+                  <e p="header-two.pug" t="Include" />
+                  <e p="menu" t="Include">
+                    <e p="menu-five.pug" t="Include" />
+                    <e p="menu-four.pug" t="Include" />
+                    <e p="menu-one.pug" t="Include" />
+                    <e p="menu-seven.pug" t="Include" />
+                    <e p="menu-six.pug" t="Include" />
+                    <e p="menu-three.pug" t="Include" />
+                    <e p="menu-two.pug" t="Include" />
+                  </e>
+                  <e p="top-nav" t="Include">
+                    <e p="top-nav-one.pug" t="Include" />
+                    <e p="top-nav-two.pug" t="Include" />
+                  </e>
+                </e>
+                <e p="modal" t="Include">
+                  <e p="quickview-modal.pug" t="Include" />
+                </e>
+                <e p="other" t="Include">
+                  <e p="benefits.pug" t="Include" />
+                  <e p="paginator.pug" t="Include" />
+                  <e p="review.pug" t="Include" />
+                  <e p="social-icon.pug" t="Include" />
+                </e>
+                <e p="product" t="Include">
+                  <e p="quick-view.pug" t="Include" />
+                </e>
+                <e p="sections" t="Include">
+                  <e p="blog" t="Include">
+                    <e p="blog-one.pug" t="Include" />
+                    <e p="blog-three.pug" t="Include" />
+                    <e p="blog-two.pug" t="Include" />
+                  </e>
+                  <e p="brands" t="Include">
+                    <e p="brands-one.pug" t="Include" />
+                  </e>
+                  <e p="call-to-action" t="Include">
+                    <e p="cta-one.pug" t="Include" />
+                    <e p="cta-two.pug" t="Include" />
+                  </e>
+                  <e p="categories" t="Include">
+                    <e p="category-one.pug" t="Include" />
+                    <e p="category-two.pug" t="Include" />
+                  </e>
+                  <e p="dale-of-week" t="Include">
+                    <e p="dow-one.pug" t="Include" />
+                    <e p="dow-three.pug" t="Include" />
+                    <e p="dow-two.pug" t="Include" />
+                  </e>
+                  <e p="instagram" t="Include">
+                    <e p="instagram-one.pug" t="Include" />
+                    <e p="instagram-three.pug" t="Include" />
+                    <e p="instagram-two.pug" t="Include" />
+                  </e>
+                  <e p="introduction" t="Include">
+                    <e p="introduction-eight.pug" t="Include" />
+                    <e p="introduction-eleven.pug" t="Include" />
+                    <e p="introduction-five.pug" t="Include" />
+                    <e p="introduction-four.pug" t="Include" />
+                    <e p="introduction-one.pug" t="Include" />
+                    <e p="introduction-seven.pug" t="Include" />
+                    <e p="introduction-six.pug" t="Include" />
+                    <e p="introduction-ten.pug" t="Include" />
+                    <e p="introduction-three.pug" t="Include" />
+                    <e p="introduction-twelve.pug" t="Include" />
+                    <e p="introduction-two.pug" t="Include" />
+                  </e>
+                  <e p="product-thumb" t="Include">
+                    <e p="product-slide-two.pug" t="Include" />
+                    <e p="product-slide.pug" t="Include" />
+                    <e p="product-tab-four.pug" t="Include" />
+                    <e p="product-tab-one.pug" t="Include" />
+                    <e p="product-tab-slide.pug" t="Include" />
+                    <e p="product-tab-three.pug" t="Include" />
+                    <e p="product-tab-two.pug" t="Include" />
+                  </e>
+                  <e p="slider" t="Include">
+                    <e p="slider-one.pug" t="Include" />
+                  </e>
+                  <e p="team" t="Include">
+                    <e p="team-one.pug" t="Include" />
+                  </e>
+                  <e p="testimonial" t="Include">
+                    <e p="testimonial-one.pug" t="Include" />
+                    <e p="testimonial-three.pug" t="Include" />
+                    <e p="testimonial-two.pug" t="Include" />
+                  </e>
+                </e>
+                <e p="shop" t="Include">
+                  <e p="shop-header.pug" t="Include" />
+                  <e p="shop-sidebar.pug" t="Include" />
+                </e>
+              </e>
+              <e p="contact.pug" t="Include" />
+              <e p="homepage2.pug" t="Include" />
+              <e p="homepage3.pug" t="Include" />
+              <e p="homepage4.pug" t="Include" />
+              <e p="homepage5.pug" t="Include" />
+              <e p="homepage6.pug" t="Include" />
+              <e p="index.pug" t="Include" />
+              <e p="mixins" t="Include">
+                <e p="add-to-cart-button.pug" t="Include" />
+                <e p="breadcrumb.pug" t="Include" />
+                <e p="button.pug" t="Include" />
+                <e p="menu-icon.pug" t="Include" />
+                <e p="navigator.pug" t="Include" />
+                <e p="post.pug" t="Include" />
+                <e p="product-detail-content.pug" t="Include" />
+                <e p="product.pug" t="Include" />
+                <e p="quantity-controller.pug" t="Include" />
+                <e p="rate.pug" t="Include" />
+                <e p="section-title.pug" t="Include" />
+                <e p="slider.pug" t="Include" />
+                <e p="social-icons.pug" t="Include" />
+              </e>
+              <e p="post-detail.pug" t="Include" />
+              <e p="product-detail.pug" t="Include" />
+              <e p="services.pug" t="Include" />
+              <e p="shop-fullwidth-4col.pug" t="Include" />
+              <e p="shop-fullwidth-5col.pug" t="Include" />
+              <e p="shop-fullwidth-left-sidebar.pug" t="Include" />
+              <e p="shop-fullwidth-right-sidebar.pug" t="Include" />
+              <e p="shop-grid-3col.pug" t="Include" />
+              <e p="shop-grid-4col.pug" t="Include" />
+              <e p="shop-grid-sidebar.pug" t="Include" />
+              <e p="shop-list-sidebar.pug" t="Include" />
+              <e p="wishlist.pug" t="Include" />
+            </e>
+            <e p="sass" t="Include">
+              <e p="abstracts" t="Include">
+                <e p="_functions.scss" t="Include" />
+                <e p="_mixins.scss" t="Include" />
+                <e p="_variables.scss" t="Include" />
+              </e>
+              <e p="base" t="Include">
+                <e p="_container.scss" t="Include" />
+                <e p="_fonts.scss" t="Include" />
+                <e p="_reset.scss" t="Include" />
+              </e>
+              <e p="bootstrap.scss" t="Include" />
+              <e p="components" t="Include">
+                <e p="_accordion.scss" t="Include" />
+                <e p="_add-to-cart.scss" t="Include" />
+                <e p="_benefits.scss" t="Include" />
+                <e p="_blog-sidebar.scss" t="Include" />
+                <e p="_breadcrumb.scss" t="Include" />
+                <e p="_button.scss" t="Include" />
+                <e p="_cart-drawer.scss" t="Include" />
+                <e p="_custom-select.scss" t="Include" />
+                <e p="_paginator.scss" t="Include" />
+                <e p="_post-card.scss" t="Include" />
+                <e p="_product.scss" t="Include" />
+                <e p="_quantity-controller.scss" t="Include" />
+                <e p="_rate.scss" t="Include" />
+                <e p="_review.scss" t="Include" />
+                <e p="_section-title.scss" t="Include" />
+                <e p="_slider-arrow.scss" t="Include" />
+                <e p="_social-icons.scss" t="Include" />
+                <e p="_tab.scss" t="Include" />
+                <e p="_ui.scss" t="Include" />
+              </e>
+              <e p="layout" t="Include">
+                <e p="_blog.scss" t="Include" />
+                <e p="_brands.scss" t="Include" />
+                <e p="_call-to-action.scss" t="Include" />
+                <e p="_categories.scss" t="Include" />
+                <e p="_dale-of-week.scss" t="Include" />
+                <e p="_footer.scss" t="Include" />
+                <e p="_instagram.scss" t="Include" />
+                <e p="_introduction.scss" t="Include" />
+                <e p="_menu.scss" t="Include" />
+                <e p="_product-detail.scss" t="Include" />
+                <e p="_product-thumb.scss" t="Include" />
+                <e p="_slider.scss" t="Include" />
+                <e p="_team.scss" t="Include" />
+                <e p="_testimonial.scss" t="Include" />
+                <e p="_top-nav.scss" t="Include" />
+              </e>
+              <e p="page" t="Include">
+                <e p="_about.scss" t="Include" />
+                <e p="_blog.scss" t="Include" />
+                <e p="_cart.scss" t="Include" />
+                <e p="_checkout.scss" t="Include" />
+                <e p="_contact.scss" t="Include" />
+                <e p="_post-detail.scss" t="Include" />
+                <e p="_services.scss" t="Include" />
+                <e p="_shop.scss" t="Include" />
+                <e p="_wishlist.scss" t="Include" />
+              </e>
+              <e p="style.scss" t="Include" />
+            </e>
+          </e>
+          <e p="img" t="Include">
+            <e p="about_main.jpg" t="Include" />
+            <e p="Best Coffee Shops in Dallas_ Our Fave Coffee Houses.jpg" t="Include" />
+            <e p="login.jpg" t="Include" />
+            <e p="sect1.jpg" t="Include" />
+            <e p="sect21.jpg" t="Include" />
+            <e p="sect22.jpg" t="Include" />
+            <e p="sect31.jpg" t="Include" />
+            <e p="sect32.jpg" t="Include" />
+            <e p="sect41.jpg" t="Include" />
+            <e p="sect42.png" t="Include" />
+            <e p="sect43.png" t="Include" />
+            <e p="sect44.jpg" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="script.js" t="Include" />
+          </e>
+          <e p="style" t="Include">
+            <e p="authorization.css" t="Include" />
+            <e p="main.css" t="Include" />
+            <e p="normalize.css" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="MUG.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

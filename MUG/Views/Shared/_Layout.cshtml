@@ -1,0 +1,86 @@
+﻿@using System.Security.Claims
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Homepage 4</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700;900&amp;display=swap"/>
+    <link rel="shortcut icon" type="image/png" href="~/assets/images/fav.png"/>
+    <!--build:css assets/css/styles.min.css-->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="~/assets/css/slick.min.css"/>
+    <link rel="stylesheet" href="~/assets/css/fontawesome.css"/>
+    <link rel="stylesheet" href="~/assets/css/jquery.modal.min.css"/>
+    <link rel="stylesheet" href="~/assets/css/bootstrap-drawer.min.css"/>
+    <link rel="stylesheet" href="~/assets/css/style.css"/>
+    <link rel="stylesheet" href="~/style/main.css"/>
+    <link rel="stylesheet" href="~/style/authorization.css"/>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <!--endbuild-->
+</head>
+<body>
+<div class="menu -style-6" style="box-shadow: 0 20px 15px -15px rgba(23, 22, 22, 0.2);">
+    <div class="container">
+        <div class="menu__wrapper">
+            <div class="navigator">
+                <ul class="navigator_part -left">
+                    <li style="font-weight: 100"><a asp-controller="Home" asp-action="Home">M <i class="fas fa-coffee"></i> G</a></li>
+                    <li><a href="@Url.Action("Home", "Home")">HOME</a></li>
+                    <li><a href="@Url.Action("Coffee", "Coffee")">COFFEE</a></li>
+                    <li><a href="@Url.Action("About", "About")">ABOUT US</a></li>
+                </ul>
+                <ul class="navigator_part -right" style="margin-left: 630px;">
+                    <li class="relative"><a href="">Account<span class="dropable-icon"><i class="fas fa-angle-down"></i></span></a>
+                        <ul class="dropdown-menu">
+                            @{
+                                if (User.Identity.IsAuthenticated) {
+                                    <li><a>@User.FindFirst(x => x.Type == ClaimTypes.Name).Value<i class="fas fa-user-circle"></i></a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a asp-controller="Account" asp-action="Logout">Log out</a></li>
+                                }
+                                else {
+                                    <li><a asp-controller="Account" asp-action="Login">Log in</a></li>
+                                }
+                            }
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@RenderBody()
+
+<footer>
+    <div class="footer-info">
+        <div>
+            <h6>Developer</h6>
+            <a href="#">Maxim Gavrilovich</a>
+            <p style="margin-top: 140px; color: #969696; font-family: Roboto, sans-serif">© copyright 2020 Gavrilovich Maxim </p>
+        </div>
+        <div>
+            <h6>Help</h6>
+            <a href="#">About us</a>
+            <a href="#">Service</a>
+            <a href="#">Location</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div>
+            <h6>Contact with us</h6>
+            <a href="#"><i class="fab fa-telegram-plane"></i>  Telegram</a>
+            <a href="#"><i class="fab fa-facebook-f"></i>  Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i>  Instagram</a>
+            <a href="#"><i class="fab fa-viber"></i>  Viber</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

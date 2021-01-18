@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "D:\\Рабочий стол\\Study\\DBs\\CourseWork\\MUG\\MUG\\MUG.csproj",
+    "projectUniqueName": "D:\\Рабочий стол\\MUG\\MUG\\MUG.csproj",
     "projectName": "MUG",
-    "projectPath": "D:\\Рабочий стол\\Study\\DBs\\CourseWork\\MUG\\MUG\\MUG.csproj",
-    "outputPath": "D:\\Рабочий стол\\Study\\DBs\\CourseWork\\MUG\\MUG\\obj\\",
+    "projectPath": "D:\\Рабочий стол\\MUG\\MUG\\MUG.csproj",
+    "outputPath": "D:\\Рабочий стол\\MUG\\MUG\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -26,6 +26,20 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.Mvc.Core": {
+          "target": "Package",
+          "version": "[2.2.5, )"
+        },
+        "Microsoft.AspNetCore.StaticFiles": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[5.0.2, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",
