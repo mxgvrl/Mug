@@ -26,6 +26,7 @@ namespace MUG {
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<MUGContext>(options => options.UseSqlServer(connection));
             services.AddControllersWithViews();
+            services.AddCors();
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options => //CookieAuthenticationOptions
                 {

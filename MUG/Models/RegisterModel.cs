@@ -6,6 +6,9 @@ namespace MUG.Models {
         public string UserName { get; set; }
          
         [Required]
+        public string Adress { get; set; }
+
+        [Required]
         [DataType(DataType.Password)]
         public string UserPassword { get; set; }
          

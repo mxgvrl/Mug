@@ -14,6 +14,7 @@
           <e p="CoffeeController.cs" t="Include" />
           <e p="DetailsController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="OrderController.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="Additions.cs" t="Include" />
@@ -21,6 +22,7 @@
           <e p="LoginModel.cs" t="Include" />
           <e p="MUGContext.cs" t="Include" />
           <e p="OrderComposition.cs" t="Include" />
+          <e p="OrderDetailsModel.cs" t="Include" />
           <e p="ProductList.cs" t="Include" />
           <e p="Products.cs" t="Include" />
           <e p="RegisterModel.cs" t="Include" />
@@ -62,6 +64,9 @@
           </e>
           <e p="Home" t="Include">
             <e p="Home.cshtml" t="Include" />
+          </e>
+          <e p="Order" t="Include">
+            <e p="Order.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />

@@ -99,3 +99,4 @@ D:\Рабочий стол\MUG\MUG\obj\Debug\netcoreapp3.1\Razor\Views\Details\D
 D:\Рабочий стол\MUG\MUG\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 D:\Рабочий стол\MUG\MUG\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 D:\Рабочий стол\MUG\MUG\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+D:\Рабочий стол\MUG\MUG\obj\Debug\netcoreapp3.1\Razor\Views\Order\Order.cshtml.g.cs

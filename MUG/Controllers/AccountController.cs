@@ -52,7 +52,7 @@ namespace MUG.Controllers {
                 if (user == null)
                 {
                     // добавляем пользователя в бд
-                    db.Users.Add(new Users { userName = model.UserName, userPassword = model.UserPassword });
+                    db.Users.Add(new Users { userName = model.UserName, userPassword = model.UserPassword, adress = model.Adress });
                     await db.SaveChangesAsync();
  
                     await Authenticate(model.UserName); // аутентификация
